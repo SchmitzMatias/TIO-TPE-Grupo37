@@ -1,0 +1,29 @@
+<h3>Lista de Cervezas</h3>
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Cantidad</th>
+            <th>Compra</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let beer of beers" [ngClass]="{'clearance': beer.clearance}">
+            <td><img width="90" class="img-thumbnail" [src]="beer.image" [alt]="beer.name"></td>
+            <td>{{beer.name}}</td>
+            <td>{{beer.type}}</td>
+            <td>{{beer.price | currency}}</td>
+            <td><span class="badge text-bg-warning" *ngIf="beer.stock == 0">Sin Stock</span></td>
+            <td>
+                <app-input-integer [(quantity)]="beer.quantity" [max]="beer.stock" *ngIf="beer.stock" (maxReached)="maxReached($event)"></app-input-integer>
+            </td>    
+            <td>    
+                <button class="btn btn-primary" (click)="addToCart(beer)">Comprar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

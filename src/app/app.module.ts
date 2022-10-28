@@ -11,6 +11,7 @@ import { BreweryBeersComponent } from './brewery-beers/brewery-beers.component';
 import { CartComponent } from './cart/cart.component';
 import { InputIntegerComponent } from './input-integer/input-integer.component';
 import { BeerEditComponent } from './beer-edit/beer-edit.component';
+import { PublicidadComponent } from './publicidad/publicidad.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BeerEditComponent } from './beer-edit/beer-edit.component';
     BreweryBeersComponent,
     CartComponent,
     InputIntegerComponent,
-    BeerEditComponent
+    BeerEditComponent,
+    PublicidadComponent
   ],
   imports: [
     BrowserModule,

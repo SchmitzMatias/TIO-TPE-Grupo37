@@ -1,1 +1,1 @@
-TIO 2022
+Tecnología de la Información en las Organizaciones

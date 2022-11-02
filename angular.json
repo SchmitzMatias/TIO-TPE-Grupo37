@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "inputPath": "dist/brewery",
+            "inputPath": "dist/brewery2",
             "outputPath": "dist/brewery",
             "index": "src/index.html",
             "main": "src/main.ts",

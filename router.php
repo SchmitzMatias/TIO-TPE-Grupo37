@@ -12,4 +12,8 @@ const routes: Routes = [
     path: 'about',
     component: BreweryAboutComponent,
   }
+  {
+    path: 'brewery',
+    component: BreweryComponent,
+  }
 ];
